@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="heading" onclick="headingListenerEs6();">
+        Document Object Model Demo
+      </h1>
+
+      <p data-test="paragraph-1" onmouseover="paraHover()" class="paragraph">
+        Lorem ipsum yada
+      </p>
+
+      <button id="listAdderBtn">Click me!</button>
+
+      <ul class="number-list">
+        <li class="item">One</li>
+        <li class="item">Two</li>
+      </ul>
+
+      <div>
+        <img
+          data-custom-image-name="myfancyImage"
+          src="https://images.unsplash.com/photo-1625467883732-b06f641226d8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMHVzZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+          alt=""
+        />
+      </div>
+      <label for="comments">Comments:</label>
+      <input name="commentsBox" id="comments" />
+    </div>
+
+    <script src="dom.js"></script>
+  </body>
+</html>
