@@ -73,19 +73,48 @@ const copyOfFilm = JSON.parse(filmAsStr);
 console.log(copyOfFilm);
 
 // ===============
-const termMessage = document.getElementById("termMessage");
-const termInput = document.getElementById("termInput");
+// const termMessage = document.getElementById("termMessage");
+// const termInput = document.getElementById("termInput");
 
-termInput.addEventListener("keyup", function (event) {
-  const currentValueEntered = event.target.value;
+// termInput.addEventListener("keyup", function (event) {
+//   const currentValueEntered = event.target.value;
 
-  if (/^\d$/.test(currentValueEntered)) {
-    termMessage.style.display = "block";
-  } else {
-    termMessage.style.display = "none";
-  }
-});
+//   if (/^\d$/.test(currentValueEntered)) {
+//     termMessage.style.display = "block";
+//   } else {
+//     termMessage.style.display = "none";
+//   }
+// });
 
-window.addEventListener("load", function () {
-  termMessage.style.display = "none";
-});
+// window.addEventListener("load", function () {
+//   termMessage.style.display = "none";
+// });
+
+// ============= PURE FUNCTIONS ================
+
+const add = (num1, num2) => {
+  const total = num1 + num2;
+
+  return total;
+};
+
+console.log(add(5, 5));
+
+// What is not a pure function:
+
+const addNonPure = (num1, num2) => {
+  const total = num1 + num2 + Math.random();
+
+  return total;
+};
+
+console.log(addNonPure(5, 5));
+
+const createPerson = (firstName, dob) => {
+  return {
+    firstName,
+    dob,
+  };
+};
+
+console.log(createPerson("John", "12-09-2009"));
