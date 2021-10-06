@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  background: rgb(19, 19, 61, 1);
+}
+
+header {
+  background: white;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  width: 80%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.weather-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 35vh;
+}
+
+.weather-result img {
+  height: 100px;
+  width: 100px;
+}
+
+.form-control {
+  margin: 40px 0;
+  width: 250px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.submit-btn {
+  width: 80px;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: green;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.weather-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  background: rgb(203, 226, 236, 1);
+  width: 80%;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: bold;
+}
