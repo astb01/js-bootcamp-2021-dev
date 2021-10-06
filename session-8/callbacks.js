@@ -46,3 +46,24 @@ const loggedInUser = loginInUser(
 console.log("End");
 
 // CALLBACK HELL
+
+/*
+retrieveUserLikedProgrammes(userDataReceived.account, (likedProgrammes) => {
+        console.log("likedProgrammes", likedProgrammes);
+        retrieveProgrammeDetail(likedProgrammes[0], (details) => {
+            console.log("Details for programme", details);
+            retrieveBlahA(..., () => {
+// A ...
+                retrieveBlahB(..., () => {
+/// B ...
+                    retrieveBlahC(..., () => {
+// C ...
+                        retrieveBlahD(..., () => {
+/// D ..
+                            }) 
+                        })
+                        }) 
+                    })
+                }) 
+            })
+*/
