@@ -16,8 +16,23 @@ const getWeather = async (event) => {
 
   try {
     const response = await fetch(requestUrl);
-    const data = await response.json();
-    console.log(data);
+    const {
+      location: { name },
+      current: {
+        temp_c,
+        condition: { icon },
+      },
+    } = await response.json();
+
+    temperatureHeading.innerHTML = `${temp_c} &deg;C`;
+    locationNameHeading.innerHTML = name;
+
+    const weatherIcon = document.querySelector(".weather-icon");
+    weatherIcon.style.display = "none";
+    weatherIcon.src = icon;
+    weatherIcon.style.display = "display";
+
+    placeNameField.value = "";
   } catch (err) {
     console.error(err);
   }
