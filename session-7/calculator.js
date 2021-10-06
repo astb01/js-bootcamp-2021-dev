@@ -10,7 +10,9 @@ function add(...nums) {
   }
 
   return total;
-  //return nums.reduce((accumulator, current));
+
+  // alternative one liner:
+  //return nums.reduce((accumulator, current), accumulator + current);
 }
 
 function divide(num1, num2) {
