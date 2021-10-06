@@ -1,6 +1,6 @@
 // Fetch API:
 
-const url = `https://jsonplaceholder.typicode.com/posts`;
+const url = `https://jsonplaceholder.typicode.com/posts/1`;
 
 const displayPosts = (posts) => {
   console.log(posts);
