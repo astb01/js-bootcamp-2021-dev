@@ -1,4 +1,4 @@
-const weatherAPIKey = `485fa5139a404c618fc234957210110`;
+const weatherAPIKey = ``;
 const weatherAPIUrl = ` http://api.weatherapi.com/v1/current.json?key=${weatherAPIKey}`;
 
 // DOM Elements:
