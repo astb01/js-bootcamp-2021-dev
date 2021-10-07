@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: black;
+  color: white;
+  position: fixed;
+  top: 0;
+}
+
+.listing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.new-post {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  background: skyblue;
+  padding: 20px;
+  height: 50vh;
+}
+
+#posts {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+}
+
+#status {
+  height: 30px;
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.form-control input {
+  padding: 10px;
+}
+
+.form-control button {
+  background: green;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
