@@ -10,4 +10,10 @@ export const addAllNumbers = (arr) => {
   return total;
 };
 
-export const divide = (num1, num2) => num1 / num2;
+export const divide = (num1, num2) => {
+  if (num2 === 0) {
+    throw new Error("Cant divide by zero");
+  }
+
+  return num1 / num2;
+};
