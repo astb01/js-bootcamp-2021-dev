@@ -4,7 +4,7 @@
   "description": "A simple boilerplate jest environment project that allows use of es6 import/export",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --verbose",
     "coverage": "jest --coverage"
   },
   "author": "Assad Ahmad",
