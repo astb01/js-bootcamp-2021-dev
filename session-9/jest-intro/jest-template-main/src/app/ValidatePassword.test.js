@@ -15,8 +15,11 @@ describe("Validate Password", () => {
   });
 
   it("should return true when length of password is at least 8", () => {
-    const password = "1234567a";
+    let password = "1234567a";
+    expect(validatePassword(password)).toBe(true);
 
+    // check even larger than 8 in length:
+    password = "1234567a34tg4g45g45w";
     expect(validatePassword(password)).toBe(true);
   });
 
