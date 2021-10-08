@@ -1,0 +1,19 @@
+{
+  "name": "jest-template",
+  "version": "1.0.0",
+  "description": "A simple boilerplate jest environment project that allows use of es6 import/export",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "coverage": "jest --coverage"
+  },
+  "author": "Assad Ahmad",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.4",
+    "jest": "^27.1.0"
+  },
+  "dependencies": {
+    "@types/jest": "^27.0.1"
+  }
+}
