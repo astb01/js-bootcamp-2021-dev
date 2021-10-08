@@ -1,3 +1,5 @@
+import { expect } from "@jest/globals";
+import { describe } from "yargs";
 import { fizzBuzz, fizzBuzzWithRange } from "./FizzBuzz";
 
 describe("FizzBuzz", () => {
@@ -65,5 +67,18 @@ describe("FizzBuzz using range", () => {
     const result = fizzBuzzWithRange(start, end);
 
     expect(result).toBe("fizz, 7, 8, fizz, buzz");
+  });
+});
+
+describe("FizzBuzz with each", () => {
+  it.each([
+    [1, 1],
+    [3, "fizz"],
+    [5, "buzz"],
+    [15, "fizzbuzz"],
+  ])(`given %i should render fizzbuzz output`, (input, expected) => {
+    const result = fizzBuzz(input);
+
+    expect(result).toBe(expected);
   });
 });
